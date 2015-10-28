@@ -1,0 +1,13 @@
+PODS:
+  - Cedar (0.12.0)
+  - PivotalCoreKit/WatchKit/WatchKit (0.3.0)
+
+DEPENDENCIES:
+  - Cedar
+  - PivotalCoreKit/WatchKit/WatchKit
+
+SPEC CHECKSUMS:
+  Cedar: 57e00c655546e4a9dccbfcd95894565872585742
+  PivotalCoreKit: 3dab7cf9bff77eb49ce7ffc7a84e57fa8591f033
+
+COCOAPODS: 0.37.2

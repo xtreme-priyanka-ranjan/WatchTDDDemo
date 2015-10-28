@@ -1,0 +1,1 @@
+../../../PivotalCoreKit/WatchKit/WatchKit/WKUserNotificationInterfaceController+Spec.h

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QL-pS-Scc">
+                                <rect key="frame" x="10" y="269" width="355" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="G7O-IK-WSf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="G7O-IK-WSf"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhE-mv-Pbc">
+                                <rect key="frame" x="62" y="399" width="252" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZUm-lz-u8g"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="3" minY="0.0" maxX="3" maxY="0.0"/>
+                                <state key="normal" title="Send the message to the watch app">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="3"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="helloWatchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P1y-rI-hbn"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-SI-5s6">
+                                <rect key="frame" x="10" y="319" width="355" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SO8-SI-5s6" secondAttribute="trailing" constant="10" id="BrW-FR-RFz"/>
+                            <constraint firstItem="SO8-SI-5s6" firstAttribute="top" secondItem="4QL-pS-Scc" secondAttribute="bottom" constant="50" id="Gum-aR-KAt"/>
+                            <constraint firstItem="SO8-SI-5s6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="REB-T3-NAF"/>
+                            <constraint firstAttribute="trailing" secondItem="4QL-pS-Scc" secondAttribute="trailing" constant="10" id="ZdJ-FO-id9"/>
+                            <constraint firstItem="4QL-pS-Scc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="bYS-lA-oPg"/>
+                            <constraint firstItem="BhE-mv-Pbc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGP-xj-U6s"/>
+                            <constraint firstItem="SO8-SI-5s6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="deB-Jc-tZY"/>
+                            <constraint firstItem="BhE-mv-Pbc" firstAttribute="top" secondItem="4QL-pS-Scc" secondAttribute="bottom" constant="60" id="gtk-aQ-e1y"/>
+                            <constraint firstItem="4QL-pS-Scc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hA3-G3-8ON"/>
+                            <constraint firstItem="4QL-pS-Scc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iNT-Cd-ryv"/>
+                            <constraint firstItem="SO8-SI-5s6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="lyX-ow-Pew"/>
+                            <constraint firstItem="BhE-mv-Pbc" firstAttribute="top" secondItem="SO8-SI-5s6" secondAttribute="bottom" constant="50" id="tAF-qH-Gjd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="iNT-Cd-ryv"/>
+                                <exclude reference="gtk-aQ-e1y"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="label" destination="4QL-pS-Scc" id="9rW-gT-EtV"/>
+                        <outlet property="texfield" destination="SO8-SI-5s6" id="M1n-MU-lYt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
